@@ -1,13 +1,13 @@
 <!doctype html>
-<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
-		integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs="
-        crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script>
-    function triggerIFTT() {
-        S.ajax({url:"", success: function(results) {
-            alert(results)
-        } })
+    function triggerIFTTT(){
+        $.ajax({
+            success: function(result) {
+                console.log("printed")
+            } 
+        })
     }
 </script>
 
-<button onclick="TriggerIFTT()"> Trigger IFTTT </button>
+<button onclick="triggerIFTTT()"> Trigger IFTTT</button>
